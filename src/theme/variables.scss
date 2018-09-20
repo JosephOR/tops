@@ -38,8 +38,12 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  solid-blue: #004E92,
+  light-blue: #b3defb,
+  header: #004e92
 );
+$toolbar-background: map-get($colors, light-blue);
 
 
 // App iOS Variables

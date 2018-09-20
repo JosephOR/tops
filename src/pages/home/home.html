@@ -1,12 +1,12 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="light-blue">
     <ion-title>
       Ionic Blank
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="page-home">
   {{items}}
-<button (click)="goToDetails()">Enter Users</button>
+<button ion-button outline class="page-details__button" (click)="goToDetails()">Enter Users</button>
 </ion-content>

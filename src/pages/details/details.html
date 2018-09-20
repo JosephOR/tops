@@ -1,11 +1,26 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="header">
     <ion-title>
       details
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  enter user details
+<ion-content padding color="primary" class="page-details">
+	<div class="page-details__icon-wrapper">
+		<ion-img width="80" height="80" class="page-details__icon" src="../../assets/imgs/flight.png"></ion-img>
+	</div>
+  	<p class="page-details__title">enter user details</p>
+  	<div class="page-details__input-holder">
+  		<span class="page-details__input-label">Player 1</span>
+  		<input type="text" name="" class="page-details__input-input">
+  	</div>
+  	<div class="page-details__input-holder">
+  		<span class="page-details__input-label">Player 1</span>
+  		<input type="text" name="" class="page-details__input-input">
+  	</div>
+  	<div class="page-details__footer-holder">
+  		<button ion-button outline class="page-details__button"
+  			(click)="proceed()">Game Settings</button>
+  	</div>
 </ion-content>

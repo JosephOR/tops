@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="light-blue">
+    <ion-title>
+      settings
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding color="primary" class="page-settings">
+<div class="page-details__icon-wrapper">
+	<ion-img width="80" height="80" class="page-details__icon" src="../../assets/imgs/flight.png"></ion-img>
+</div>
+<div class="page-settings__sets">
+	<button ion-button outline class="page-details__button" 
+		[ngClass]="isActive()"
+		*ngFor="let set of sets"
+		(click)="setActiveSet()">{{set}}</button>
+</div>
+  	
+</ion-content>

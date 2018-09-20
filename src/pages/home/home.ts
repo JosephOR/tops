@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { DetailsPage } from '../details/details'
+import { DetailsPage } from '../details/details';
 
 @Component({
   selector: 'page-home',
@@ -8,11 +8,11 @@ import { DetailsPage } from '../details/details'
 })
 export class HomePage {
 	items:any[] = [];
-  constructor(public navCtrl: NavController) {
-  	this.items = ['one', 'two', 'three']
-  }
+  	constructor(public navCtrl: NavController) {
+  		this.items = ['one', 'two', 'three']
+  	}
 
-  goToDetails() {
-  	this.navCtrl.push(DetailsPage);
-  }
+  	goToDetails() {
+  		this.navCtrl.push(DetailsPage);
+  	}
 }

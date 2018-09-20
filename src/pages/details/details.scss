@@ -1,3 +1,57 @@
-details {
-	
+.page-details {
+	background: linear-gradient(rgba(0,4,40,1), rgba(0,78,146,1));
+	&__icon-wrapper {
+		display: flex;
+		justify-content: center;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+	&__icon {
+		background: none
+	}
+	&__title {
+		font-size: 14px;
+		color: color($colors, light-blue, base);
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	&__input-holder {
+		display: flex;
+    	flex-direction: column;
+    	color: white;
+    	margin-bottom: 20px
+	}
+	&__input-label {
+		padding: 5px 0px;
+		color: color($colors, light-blue, base);
+		font-size: 20px
+	}
+
+	&__input-input {
+		background: none;
+    	border-radius: 20px;
+    	border: 1px solid color($colors, light-blue, base);
+    	padding: 10px;
+    	line-height: 29px
+	}
+	&__item-input {
+		border: none
+	}
+	&__footer::before {
+		bottom: inherit;
+	}
+	&__footer-holder {
+		display: flex;
+    	justify-content: center;
+    	padding: 20px 0px;
+	}
+	&__button {
+		color: color($colors, light-blue, base);;
+		border-color: color($colors, light-blue, base);;
+		border-radius: 20px;
+	}
+}
+.item-md.item-block .item-inner {
+    padding-right: 8px;
+    border-bottom: none;
 }
