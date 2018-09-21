@@ -1,16 +1,36 @@
-page-settings {
+.page-settings {
 	background: linear-gradient(rgba(0,4,40,1), rgba(0,78,146,1));
-	&__sets {
-		display: flex;
-		height: 20px;
-		background: map-get($colors, light-blue);
-		witdh:100%;
-	}
 	.scroll-content {
 		padding: 0px !important;
 	}
-	&__sets {
+	&__options {
 		display: flex;
 		flex-direction: row;
+		border-top: 1px solid color($colors, light-blue);
+		border-bottom: 1px solid color($colors, light-blue);
+	}
+	&__option-title {
+		color: color($colors, light-blue);
+		font-size: 14px;
+		padding-left: 12px
+	}
+	&__option-holder {
+	    display: flex;
+    	flex-direction: row;
+	    justify-content: space-around;
+	    flex: 1 1 auto;
+	}
+	&__option {
+		display: flex;
+    	flex: 1 1 auto;
+    	justify-content: center;
+    	font-size: 40px;
+    	color: color($colors, light-blue);
+    	border-left: 1px solid color($colors, light-blue);
+		border-right: 1px solid color($colors, light-blue);
+	}
+	&__active-option {
+		background: color($colors, light-blue);
+		color: color($colors, solid-blue);
 	}
 }

@@ -7,14 +7,47 @@
 </ion-header>
 
 <ion-content padding color="primary" class="page-settings">
-<div class="page-details__icon-wrapper">
-	<ion-img width="80" height="80" class="page-details__icon" src="../../assets/imgs/flight.png"></ion-img>
-</div>
-<div class="page-settings__sets">
-	<button ion-button outline class="page-details__button" 
-		[ngClass]="isActive()"
-		*ngFor="let set of sets"
-		(click)="setActiveSet()">{{set}}</button>
-</div>
-  	
+	<div class="page-details__icon-wrapper">
+		<ion-img width="80" height="80" class="page-details__icon" src="../../assets/imgs/flight.png"></ion-img>
+	</div>
+	<div class="page-settings__sets-wrapper">
+		<p class="page-settings__option-title">Game type</p>
+		<div class="page-settings__options">
+			<div class="page-settings__option-holder">
+				<div class="page-settings__option"
+					*ngFor="let game of games"
+					[ngClass]="isActiveGame(game)"
+					(click)="setActiveGame(game)">
+					{{game.name}}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page-settings__sets-wrapper">
+		<p class="page-settings__option-title">Number of Sets</p>
+		<div class="page-settings__options">
+			<div class="page-settings__option-holder">
+				<div class="page-settings__option"
+					*ngFor="let set of sets"
+					[ngClass]="isActiveSet(set)"
+					(click)="setActiveSet(set)">
+					{{set.name}}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page-settings__sets-wrapper">
+		<p class="page-settings__option-title">Number of Legs</p>
+		<div class="page-settings__options">
+			<div class="page-settings__option-holder">
+				<div class="page-settings__option"
+					*ngFor="let leg of legs"
+					[ngClass]="isActiveLeg(leg)"
+					(click)="setActiveLeg(leg)">
+					{{leg.name}}
+				</div>
+			</div>
+		</div>
+	</div>
+
 </ion-content>
