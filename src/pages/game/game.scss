@@ -1,0 +1,86 @@
+.page-game {
+	background: linear-gradient(rgba(0,4,40,1), rgba(0,78,146,1));
+	&__main-wrapper {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+	&__names {
+		display: flex;
+		flex: 1;
+		border-bottom: 1px solid color($colors, light-blue)
+	}
+	&__scores {
+		display: flex;
+		flex: 2;
+		border-bottom: 1px solid color($colors, light-blue);
+		flex-direction: column;
+		align-items: center;
+	}
+	&__scores-title {
+		font-size: 10px;
+		display: flex;
+		flex: 1;
+		color: color($colors, light-blue);
+		align-items: center;
+
+	}
+	&__scores-score {
+		font-size: 30px;
+		display: flex;
+		flex: 2;
+		color: color($colors, light-blue);
+		align-items: center;
+
+	}
+	&__scores-checkout {
+		font-size: 10px;
+		display: flex;
+		flex: 1;
+		color: color($colors, light-blue);
+		align-items: center;
+		align-items: flex-end;
+	}
+	&__scores-checkout-value {
+		font-size: 12px;
+		display: flex;
+		flex: 1;
+		color: color($colors, light-blue);
+		align-items: center;
+		align-items: flex-start;
+	}
+
+	&__stats {
+		display: flex;
+		flex: 2;
+		border-bottom: 1px solid color($colors, light-blue)
+	}
+	&__numbers {
+		display: flex;
+		flex: 3;
+		flex-direction: column;
+	}
+	&__numbers-row {
+		display: flex;
+		flex-direction: row;
+		flex: 1;
+		/*align-items: center;*/
+	}
+	&__numbers-row-number {
+		height: 100%;
+	    flex: 1;
+    	text-align: center;
+	    font-size: 30px;
+	    color: color($colors, light-blue);
+	    border: 1px solid color($colors, light-blue);
+    	padding-top: 2%;
+	}
+
+	&__numbers-icon {
+		color: color($colors, light-blue);
+	}
+}
+.ion-app.md [padding] .scroll-content {
+    padding-right: 8px;
+    border-bottom: none;
+} 

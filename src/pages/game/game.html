@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar color="header-blue">
+    <ion-title>
+      501
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content color="primary" class="page-game">
+	<div class="page-game__main-wrapper">
+		<div class="page-game__names">names</div>
+		<div class="page-game__stats">stats</div>
+		<div class="page-game__scores">
+			<span class="page-game__scores-title">Current Score</span>
+			<span class="page-game__scores-score">{{currentScoreUI}}</span>
+			<span class="page-game__scores-checkout">Checkout</span>
+			<span class="page-game__scores-checkout-value">T20 D16</span>
+		</div>
+		<div class="page-game__numbers">
+			<div class="page-game__numbers-row">
+				<span class="page-game__numbers-row-number" (click)="enterNumber(1)">1</span>
+				<span class="page-game__numbers-row-number" (click)="enterNumber(2)">2</span>
+				<span class="page-game__numbers-row-number" (click)="enterNumber(3)">3</span>
+			</div>
+			<div class="page-game__numbers-row">
+				<span class="page-game__numbers-row-number" (click)="enterNumber(4)">4</span>
+				<span class="page-game__numbers-row-number" (click)="enterNumber(5)">5</span>
+				<span class="page-game__numbers-row-number" (click)="enterNumber(6)">6</span>
+			</div>
+			<div class="page-game__numbers-row">
+				<span class="page-game__numbers-row-number" (click)="enterNumber(7)">7</span>
+				<span class="page-game__numbers-row-number" (click)="enterNumber(8)">8</span>
+				<span class="page-game__numbers-row-number" (click)="enterNumber(9)">9</span>
+			</div>
+			<div class="page-game__numbers-row">
+				<span class="page-game__numbers-row-number">
+					<ion-icon name="close-circle"
+						class="page-game__numbers-icon"></ion-icon>
+				</span>
+				<span class="page-game__numbers-row-number" (click)="enterNumber(0)">0</span>
+				<span class="page-game__numbers-row-number" (click)="enterScore()">
+					<ion-icon name="checkmark-circle"
+						 class="page-game__numbers-icon"></ion-icon>
+				</span>
+			</div>
+		</div>
+	</div>
+</ion-content>

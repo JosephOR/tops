@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { DetailsPage } from '../pages/details/details';
 import { SettingsPage } from '../pages/settings/settings';
+import { GamePage } from '../pages/game/game';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     DetailsPage,
-    SettingsPage
+    SettingsPage,
+    GamePage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { SettingsPage } from '../pages/settings/settings';
     MyApp,
     HomePage,
     DetailsPage,
-    SettingsPage
+    SettingsPage,
+    GamePage
   ],
   providers: [
     StatusBar,

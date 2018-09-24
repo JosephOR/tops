@@ -41,9 +41,9 @@ $colors: (
   dark:       #222,
   solid-blue: #004E92,
   light-blue: #b3defb,
-  header: #004e92
+  header-blue: #004e92
 );
-$toolbar-background: map-get($colors, light-blue);
+$toolbar-background: map-get($colors, header-blue);
 
 
 // App iOS Variables

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { GamePage } from '../game/game';
 
 @Component({
 	selector: 'page-settings',
@@ -38,4 +39,14 @@ export class SettingsPage {
   	setActiveGame(game) {
   		this.selectedGame = game;
   	}
+    proceed() {
+      let gameDetails = {
+        gameType: this.selectedGame,
+        sets: this.selectedSet,
+        legs: this.selectedLeg
+      }
+      this.navCtrl.push(GamePage, {
+        data: gameDetails
+      });
+    }
 }
